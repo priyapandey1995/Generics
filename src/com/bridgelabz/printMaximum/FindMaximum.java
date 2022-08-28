@@ -15,9 +15,9 @@ public class FindMaximum {
 	 * @return maximum is returned
 	 */
 	
-	public static Float toPrintMax(Float a ,Float b,Float c) {
+	public static String toPrintMax(String a ,String b,String c) {
 		
-		Float max = a;
+		String max = a;
 		
 		if(b.compareTo(max) > 0 ) 
 			max = b;
