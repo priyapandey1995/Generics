@@ -1,11 +1,26 @@
 package com.bridgelabz.printMaximum;
+
+
 /**
  * 
  * @author pande
  *
+ * @param <T> generic type 
+ * Generic class is used to find the max of numbers
  */
-
-public class FindMaximum {
+public class FindMaximum<T extends Comparable> {
+	
+	T a;
+	T b;
+	T c;
+	
+	//Constructor
+	public FindMaximum(T a, T b,T c){
+		this.a = a;
+		this.b = b;
+		this.c = c;
+		
+	}
 	
 	/**
 	 * maximum numbers are found using generic methods
@@ -24,6 +39,7 @@ public class FindMaximum {
 		
 		if(c.compareTo(max) > 0 )
 			max = c;
+		
 		return max;
 		
 	}
