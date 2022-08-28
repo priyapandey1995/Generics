@@ -30,16 +30,16 @@ public class FindMaximum<T extends Comparable> {
 	 * @return maximum is returned
 	 */
 	
-	public static <T extends Comparable<T>> T toPrintMax(T a ,T b,T c) {
+	public static <T extends Comparable<T>> T toPrintMax(T... value) {
 		
-		T max = a;
+		T max = value[0];
 		
-		if(b.compareTo(max) > 0 ) 
-			max = b;
 		
-		if(c.compareTo(max) > 0 )
-			max = c;
-		
+		for(int i = 1;i < value.length; i++) {
+			if(value[i].compareTo(max) > 0 ) {
+				max = value[i];
+			}
+		}
 		return max;
 		
 	}
