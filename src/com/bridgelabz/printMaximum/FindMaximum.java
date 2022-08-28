@@ -8,16 +8,16 @@ package com.bridgelabz.printMaximum;
 public class FindMaximum {
 	
 	/**
-	 * 
+	 * maximum numbers are found using generic methods
 	 * @param a value is set to max
 	 * @param b value is compared  
 	 * @param c value is  compared
 	 * @return maximum is returned
 	 */
 	
-	public static String toPrintMax(String a ,String b,String c) {
+	public static <T extends Comparable<T>> T toPrintMax(T a ,T b,T c) {
 		
-		String max = a;
+		T max = a;
 		
 		if(b.compareTo(max) > 0 ) 
 			max = b;
