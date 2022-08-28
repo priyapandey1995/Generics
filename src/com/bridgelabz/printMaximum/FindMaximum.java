@@ -12,12 +12,12 @@ public class FindMaximum {
 	 * @param a value is set to max
 	 * @param b value is compared  
 	 * @param c value is  compared
-	 * @return maximum of three integer is returned
+	 * @return maximum is returned
 	 */
 	
-	public static Integer toPrintMax(Integer a ,Integer b,Integer c) {
+	public static Float toPrintMax(Float a ,Float b,Float c) {
 		
-		Integer max = a;
+		Float max = a;
 		
 		if(b.compareTo(max) > 0 ) 
 			max = b;
